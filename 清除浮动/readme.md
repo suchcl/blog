@@ -1,4 +1,5 @@
 # h5 清除浮动
-## 读懂现象
+## 浮动现象
 如下图：
-![](images/img01.jpg)
+
+![](images/img1.jpg)
