@@ -6,3 +6,25 @@
 ul, ol, li {
     list-style: none;
 }
+.container{
+    padding-top: 20px;
+}
+.box {
+    width: 400px;
+    margin: 0 auto;
+    background-color: #00f;
+    border: 1px solid #000;
+}
+.mod,.mod2{
+    height: 100px;
+}
+.mod{
+    float: left;
+    width: 180px;
+    background-color: #f20;
+}
+.mod2{
+    float: right;
+    width: 200px;
+    background-color: #369;
+}
