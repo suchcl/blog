@@ -12,6 +12,7 @@ ul, ol, li {
 .box {
     width: 400px;
     margin: 0 auto;
+    padding: 20px;
     background-color: #00f;
     border: 1px solid #000;
 }
@@ -24,7 +25,7 @@ ul, ol, li {
     background-color: #f20;
 }
 .mod2{
-    float: right;
+    float: left;
     width: 200px;
     background-color: #369;
 }
