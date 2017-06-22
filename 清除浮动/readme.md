@@ -22,13 +22,18 @@
 
 1. 设置高度
 	
-
 	既然产生浮动问题后的表现是父容器的高度没有被撑开，那么为父容器设置一个高度，问题就解决了。不过这种解决方式的灵活性不好，实际中很少使用。
-	
-	
 
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 
-
+```
+	<div class="box">
+        <div class="mod">mod</div>
+        <div class="mod2">mod2</div>
+    </div>
+```
 	
 
 	
