@@ -17,15 +17,14 @@ ul, ol, li {
     border: 1px solid #000;
 }
 .mod,.mod2{
+    float: left;
     height: 100px;
 }
 .mod{
-    float: left;
     width: 180px;
     background-color: #f20;
 }
 .mod2{
-    float: left;
     width: 200px;
     background-color: #369;
 }

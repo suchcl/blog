@@ -30,7 +30,28 @@
         <div class="mod2">mod2</div>
     </div>
     ```
-	
+	css样式如下:
+	```css
+	.box {
+        width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #00f;
+        border: 1px solid #000;
+    }
+    .mod,.mod2{
+        float: left;
+        height: 100px;
+    }
+    .mod{
+        width: 180px;
+        background-color: #f20;
+    }
+    .mod2{
+        width: 200px;
+        background-color: #369;
+    }
+	```
 
 
 2. 通过为父元素设置overflwo:hidden;
