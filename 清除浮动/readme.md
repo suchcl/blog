@@ -1,5 +1,4 @@
 
-
 # h5 清除浮动
 ### 浮动现象
 ![](images/img1.jpg)
@@ -27,9 +26,9 @@
 
 ```html
 	<div class="box">
-        	<div class="mod">mod</div>
-        	<div class="mod2">mod2</div>
-    	</div>
+        <div class="mod">mod</div>
+        <div class="mod2">mod2</div>
+    </div>
 ```
 	
 
