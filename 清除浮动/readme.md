@@ -25,10 +25,10 @@
 
 
 ```html
-	<div class="box">
-        <div class="mod">mod</div>
-        <div class="mod2">mod2</div>
-    </div>
+<div class="box">
+    <div class="mod">mod</div>
+    <div class="mod2">mod2</div>
+</div>
 ```
 	
 
