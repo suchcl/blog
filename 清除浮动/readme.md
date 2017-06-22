@@ -34,6 +34,7 @@
 	```css
 	.box {
         width: 400px;
+        height: 100px;
         margin: 0 auto;
         padding: 20px;
         background-color: #00f;
@@ -52,7 +53,7 @@
         background-color: #369;
     }
 	```
-
+    因为为父容器box设置了高度，但是子容器mod和mod2的内容不固定，具有很大的不确定性，所以这种清除浮动的方式的扩展性和灵活性有限。
 
 2. 通过为父元素设置overflwo:hidden;
 
