@@ -1,5 +1,5 @@
 
-#### 怎么在markdown中添加代码作为内容中的一个区块，能使代码高亮显示并且不被解析
+### 怎么在markdown中添加代码作为内容中的一个区块，能使代码高亮显示并且不被解析
 
 我主要在两个地方使用了markdown，现在说说这两个地方的实现。
 
@@ -8,6 +8,12 @@
 后来在网上查了一些资料，终于搞明白了。
 
 在github中的markdown文档插入代码，并使代码作为内容块高亮显示，其实很简单。在我们需要加入代码的地方连续输入模板字符串(就是键盘左上角的`,1左侧的那个不常用的键)，然后跟上要输入的代码类型，比如```html,最后在代输入结束后再连续输入3个模板字符串结束。
+
+<pre>
+```lang
+    //代码
+```
+</pre>
 
 看下面几个例子：
 ```html
@@ -67,13 +73,13 @@ function logTasks(env, localGulp) {
 java代码:
 ```java
 public class Main {
-	public static void main(String[] args){
-		String str = "We are happy!";
-		System.out.println(spaceReplace(str));
-	}
+    public static void main(String[] args){
+        String str = "We are happy!";
+        System.out.println(spaceReplace(str));
+    }
 
-	public static String spaceReplace(String str){
-		return str.replace(" ", "%20");
-	}
+    public static String spaceReplace(String str){
+        return str.replace(" ", "%20");
+    }
 }
 ```
