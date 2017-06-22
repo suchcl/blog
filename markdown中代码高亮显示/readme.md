@@ -83,3 +83,38 @@ public class Main {
     }
 }
 ```
+
+上面的几个例子，都是写少的markdown直接再github上使用，代码的高亮效果直接就出来了。然而很多适合我们写的markdown并不是在github上使用，比如我经常在我的工作电脑上使用mou来编辑markdown。
+
+这个时候，上面的方式就不行了，这个时候可以看借助highlight.js插件。
+
+在markdown文件的顶部引入插件必要的依赖文件。
+
+#### highlight.js插件的引入方式
+
+可以参考插件官网[https://highlightjs.org/usage/](https://highlightjs.org/usage/)的说明文档，主要有2种方式：
+
+1. CDN
+
+   可以使用官网提供的CDN地址，也可以通过其他的的CDN提供的，这中方是依赖性很强，如果别人的CDN变了，你的应用也就不能用了，不建议使用。
+
+2. 下载highlight.js插件库
+
+   下载highlight.js插件库到到本地，放在和markdown文件相关联的地方，在markdown文件的顶部引入必须的依赖文件css和js，如下：
+    <pre>
+    <link rel="stylesheet" href="./lib/styles/default.css">
+    <script src="./lib/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    </pre>
+
+    ```html
+    <div class="box">
+        <div class="mod">mod</div>
+        <div class="mod2">mod2</div>
+        <br clear="both">
+    </div>
+    ```
+
+    实现效果
+   ![](images/img1.jpg)
+
