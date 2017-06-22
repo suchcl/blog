@@ -23,13 +23,13 @@
 	
    既然产生浮动问题后的表现是父容器的高度没有被撑开，那么为父容器设置一个高度，问题就解决了。不过这种解决方式的灵活性不好，实际中很少使用。
 
-
-```html
-<div class="box">
-    <div class="mod">mod</div>
-    <div class="mod2">mod2</div>
-</div>
-```
+    html结构如下:
+    ```html
+    <div class="box">
+        <div class="mod">mod</div>
+        <div class="mod2">mod2</div>
+    </div>
+    ```
 	
 
 
