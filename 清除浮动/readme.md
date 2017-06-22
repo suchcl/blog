@@ -1,4 +1,6 @@
-
+<link rel="stylesheet" href="/path/to/styles/default.css">
+<script src="/path/to/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 
 # h5 清除浮动
 ### 浮动现象
