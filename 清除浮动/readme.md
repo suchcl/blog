@@ -1,5 +1,5 @@
 
-# h5 清除浮动
+# 清除浮动
 ### 浮动现象
 ![](images/img1.jpg)
 
@@ -96,6 +96,42 @@
 
 
 3. 父容器使用伪类;
+
+   html结构代码如下:
+   ```html
+   <div class="box">
+       <div class="mod">mod</div>
+       <div class="mod2">mod2</div>
+   </div>
+   ```
+   css样式代码如下:
+   ```css
+   .box {
+       width: 400px;
+       margin: 0 auto;
+       padding: 20px;
+       background-color: #00f;
+       border: 1px solid #000;
+   }
+   .box:after{
+       clear: both;
+       display: block;
+       content: "";
+   }
+   .mod,.mod2{
+       float: left;
+       height: 100px;
+   }
+   .mod{
+       width: 180px;
+       background-color: #f20;
+   }
+   .mod2{
+       width: 200px;
+       background-color: #369;
+   }
+   ```
+   这种方式还是不错的，就是添加了几行css代码，对html结构没有任何的改动，也不会因为入容器的overflow:hidden;而可能会对后来的效果造成影响。
 
 
 4. 使用clear:both;

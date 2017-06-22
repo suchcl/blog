@@ -9,13 +9,20 @@ ul, ol, li {
 .container{
     padding-top: 20px;
 }
+.clear{
+    clear: both;
+}
 .box {
     width: 400px;
     margin: 0 auto;
     padding: 20px;
     background-color: #00f;
     border: 1px solid #000;
-    overflow: hidden;
+}
+.box:after{
+    clear: both;
+    display: block;
+    content: "";
 }
 .mod,.mod2{
     float: left;
