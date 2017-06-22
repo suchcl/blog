@@ -1,6 +1,4 @@
-<link rel="stylesheet" href="./lib/styles/default.css">
-<script src="./lib/highlight.pack.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
+
 
 # h5 清除浮动
 ### 浮动现象
@@ -28,11 +26,11 @@
 
 
 
-```
+```html
 	<div class="box">
         <div class="mod">mod</div>
         <div class="mod2">mod2</div>
-    </div>
+    	</div>
 ```
 	
 
