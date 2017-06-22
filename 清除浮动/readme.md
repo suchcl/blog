@@ -3,6 +3,9 @@
 ### 浮动现象
 ![](images/img1.jpg)
 
+而我们预期的效果是这样的:
+![](images/img2.jpg)
+
 如图所示，两个模块的父容器，没有被两个子元素mod和mod2撑开，父容器的样式没有展示出来。
 
 ###  浮动产生原因
@@ -136,6 +139,74 @@
 
 4. 使用clear:both;
 
-
+   这种方式是在html中的两个子元素后面后面添加一个空的标记，而给这个空的标记设置一个样式: clear:both;
+   html结构如下:
+   ```html
+   <div class="box">
+       <div class="mod">mod</div>
+       <div class="mod2">mod2</div>
+       <div class="clear"></div>
+   </div>
+   ```
+   css样式如下:
+   ```css
+   .clear{
+       clear: both;
+   }
+   .box {
+       width: 400px;
+       margin: 0 auto;
+       padding: 20px;
+       background-color: #00f;
+       border: 1px solid #000;
+   }
+   .mod,.mod2{
+       float: left;
+       height: 100px;
+   }
+   .mod{
+       width: 180px;
+       background-color: #f20;
+   }
+   .mod2{
+       width: 200px;
+       background-color: #369;
+   }
+   ```
+   这种方式也可以清除浮动，但美中不足的是在html结构代码中添加了一个空的html标记，这个标记没有任何数据表示上的意义，仅仅是为了引用clear:both;的一个样式。如果套页面的同学不小心，或者套页面的同学不熟悉html代码的话，这里会造成困惑，可能会导致一些意外的错误。
 
 5. html子元素后面添加一个空标记
+
+   现在的这种方式和上面的一种方式基本相同给，也是在html结构种的浮动的元素后面添加一个空的html标记，不同的是前面一种方式是借用css样式来解决浮动，现在是借用dom属性的方式来解决浮动。
+
+   html结构代码如下:
+   ```html
+   <div class="box">
+       <div class="mod">mod</div>
+       <div class="mod2">mod2</div>
+       <br clear="both">
+   </div>
+   ```
+   css样式如下：
+   ```css
+   .box {
+       width: 400px;
+       margin: 0 auto;
+       padding: 20px;
+       background-color: #00f;
+       border: 1px solid #000;
+   }
+   .mod,.mod2{
+       float: left;
+       height: 100px;
+   }
+   .mod{
+       width: 180px;
+       background-color: #f20;
+   }
+   .mod2{
+       width: 200px;
+       background-color: #369;
+   }
+   ```
+   对于后两种清除浮动的方式，不太建议使用，因为我们不能不能保证我们提供页面以后的使用者都是很懂html(有很多人不管懂还是不懂，看也不看，上来就改)，所以html结构，一定要做到清晰易懂。
