@@ -101,13 +101,11 @@ public class Main {
 2. 下载highlight.js插件库
 
    下载highlight.js插件库到到本地，放在和markdown文件相关联的地方，在markdown文件的顶部引入必须的依赖文件css和js，如下：
-    <pre>
-    <code>
+    ```html
     <link rel="stylesheet" href="./lib/styles/default.css"/>
     <script src="./lib/highlight.pack.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    </code>
-    </pre>
+    ```
 
     ```html
     <div class="box">
