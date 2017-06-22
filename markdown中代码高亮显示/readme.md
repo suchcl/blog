@@ -100,6 +100,14 @@ public class Main {
 
 2. 下载highlight.js插件库
 
+    插件官网:[https://highlightjs.org](https://highlightjs.org)
+
+    下载highlight.js插件库的时候，可以自定义选择需要对哪些语言的代码进行高亮显示，选择了之后下载的插件库就支持了这些语言的语法高亮了。
+
+    ![](images/img2.png)
+
+    另外，highlight.js插件还有丰富的说明文档可以参考[http://highlightjs.readthedocs.io/en/latest/api.html](http://highlightjs.readthedocs.io/en/latest/api.html)
+
    下载highlight.js插件库到到本地，放在和markdown文件相关联的地方，在markdown文件的顶部引入必须的依赖文件css和js，如下：
     ```html
     <link rel="stylesheet" href="./lib/styles/default.css"/>
