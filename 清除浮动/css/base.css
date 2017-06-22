@@ -11,11 +11,11 @@ ul, ol, li {
 }
 .box {
     width: 400px;
-    height: 100px;
     margin: 0 auto;
     padding: 20px;
     background-color: #00f;
     border: 1px solid #000;
+    overflow: hidden;
 }
 .mod,.mod2{
     float: left;

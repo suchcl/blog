@@ -59,6 +59,40 @@
 
 2. 通过为父元素设置overflwo:hidden;
 
+    通过为父容器设置样式overflow:hidden;也可以达到清除浮动的目的。
+    html结构代码如下:
+    ```html
+    <div class="box">
+        <div class="mod">mod</div>
+        <div class="mod2">mod2</div>
+    </div>
+    ```
+    css样式代码如下：
+    ```css
+    .box {
+        width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #00f;
+        border: 1px solid #000;
+        overflow: hidden;
+    }
+    .mod,.mod2{
+        float: left;
+        height: 100px;
+    }
+    .mod{
+        width: 180px;
+        background-color: #f20;
+    }
+    .mod2{
+        width: 200px;
+        background-color: #369;
+    }
+    ```
+    这种方式简单有效，但也有一定的弊端，就是在个别的场景下，我们可能需要在子元素mod或mod2中有一个浮在文档流之上的效果，如果这个效果超出了父容器的边界，那么这个浮层就会被父容器的overflow:hidden;给截掉，导致了效果的缺失。
+
+    虽然通过为父容器添加overflow:hidden;的方式有一定的弊端，但是出现意外的场景并不是很多，这种解决浮动问题的方式使用率还是很高的。
 
 
 3. 父容器使用伪类;
