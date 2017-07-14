@@ -9,7 +9,7 @@ ul,ol,li{
 .btn-wrap{
     text-align: center;
     width: 200px;
-    margin: 50px auto;
+    margin: 50px auto 5px;
     background-color: #008080;
 }
 .btn{
