@@ -113,3 +113,41 @@ css
 ![](images/img3.png)
 
 元素之间的间隙问题虽然解决了，但是解决就问题的同时，又带来了新的问题：浮动，按钮的父容器没有被撑开，父容器的背景色没有显示出来。如果这个时候我们还需要其他的一些效果，比如按钮居中显示等，就需要为按钮的父容器设置宽度、边距、计算按钮宽度等计算来实现，不能通过text-align:center;直接实现。所以说浮动的这种方式也不适合大规模使用。
+
+6. 最后一种，设置font-size:0;
+
+这里是我详细介绍的最后一种解决方案。
+
+为内联元素的父容器设置font-size:0;同样解决问题，而且也没有带来新的问题，是一种理想的解决方案。
+
+```htl
+<div class="btn-wrap">
+    <button class="btn btn-reset">重置</button>
+    <button class="btn btn-commit">提交</button>
+</div>
+```
+
+css样式表
+
+```css
+.btn-wrap {
+    text-align: center;
+    font-size: 0;
+    -webkit-text-size-adjust: none;
+    width: 200px;
+    margin: 50px auto 5px;
+    background-color: #008080;
+}
+.btn {
+    width: 40px;
+    height: 28px;
+    line-height: 28px;
+    overflow: hidden;
+}
+```
+
+这个还是比较理想的解决方案,但是为了解决chrome的兼容性问题，需要添加一个-webkit-text-size-adjust: none;属性。
+
+7. 其他
+
+其他的解决方案，比如通过设置letter-spacing、word-spacing等方式，也可以解决这些问题，但是由于兼容性问题不好解决，很难做到效果的统一，所以就不再详细介绍了，但它们在某些场景下确实也是有效的解决方案。

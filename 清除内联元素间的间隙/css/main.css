@@ -8,12 +8,13 @@ ul, ol, li {
 }
 .btn-wrap {
     text-align: center;
+    font-size: 0;
+    -webkit-text-size-adjust: none;
     width: 200px;
     margin: 50px auto 5px;
     background-color: #008080;
 }
 .btn {
-    float: left;
     width: 40px;
     height: 28px;
     line-height: 28px;
