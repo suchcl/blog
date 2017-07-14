@@ -84,3 +84,32 @@ margin负值的值，是和文字的字号和字体有关系的，不同的字�
 ```
 
 这样就不行。这中方式，切忌，不要用，风险太高。
+
+5. 使用浮动
+
+不得不说，浮动，太强大了，很多问题，都可以用浮动来解决。这里的间隙问题，也可以用浮动来解决。
+
+```html
+<div class="btn-wrap">
+    <button class="btn btn-reset">重置</button>
+    <button class="btn btn-commit">提交</button>
+</div>
+```
+
+css
+
+```css
+.btn {
+    float: left;
+    width: 40px;
+    height: 28px;
+    line-height: 28px;
+    overflow: hidden;
+}
+```
+
+效果
+
+![](images/img3.png)
+
+元素之间的间隙问题虽然解决了，但是解决就问题的同时，又带来了新的问题：浮动，按钮的父容器没有被撑开，父容器的背景色没有显示出来。如果这个时候我们还需要其他的一些效果，比如按钮居中显示等，就需要为按钮的父容器设置宽度、边距、计算按钮宽度等计算来实现，不能通过text-align:center;直接实现。所以说浮动的这种方式也不适合大规模使用。

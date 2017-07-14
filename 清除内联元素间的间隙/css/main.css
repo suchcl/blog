@@ -13,20 +13,20 @@ ul, ol, li {
     background-color: #008080;
 }
 .btn {
+    float: left;
     width: 40px;
     height: 28px;
     line-height: 28px;
     overflow: hidden;
 }
 .box {
-    clear: both;
     width: 200px;
     margin: 0 auto 10px;
     background-color: #203;
-    overflow: hidden;
 }
 .box .b1, .box .b2 {
     display: inline-block;
+    float: left;
     color: #fff;
     box-sizing: border-box;
     font-size: 16px;
