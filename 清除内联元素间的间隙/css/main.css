@@ -1,31 +1,31 @@
 @charset "UTF-8";
-*{
+* {
     padding: 0;
     margin: 0;
 }
-ul,ol,li{
+ul, ol, li {
     list-style: none;
 }
-.btn-wrap{
+.btn-wrap {
     text-align: center;
     width: 200px;
     margin: 50px auto 5px;
     background-color: #008080;
 }
-.btn{
+.btn {
     width: 40px;
     height: 28px;
     line-height: 28px;
     overflow: hidden;
 }
-.box{
+.box {
     clear: both;
     width: 200px;
-    margin: 0 auto;
+    margin: 0 auto 10px;
     background-color: #203;
     overflow: hidden;
 }
-.box .b1,.box .b2{
+.box .b1, .box .b2 {
     display: inline-block;
     color: #fff;
     box-sizing: border-box;
@@ -37,6 +37,17 @@ ul,ol,li{
 .box .b1 {
     background-color: #f20;
 }
-.box .b2{
+.box .b2 {
+    background-color: #986801;
+}
+.box a, .box span {
+    background-color: #369;
+}
+p.box{
+    display: block;
+}
+.box p {
+    display: inline;
+    color: #fff;
     background-color: #986801;
 }
