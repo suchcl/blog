@@ -1,0 +1,42 @@
+@charset "UTF-8";
+*{
+    padding: 0;
+    margin: 0;
+}
+ul,ol,li{
+    list-style: none;
+}
+.btn-wrap{
+    text-align: center;
+    width: 200px;
+    margin: 50px auto;
+    background-color: #008080;
+}
+.btn{
+    width: 40px;
+    height: 28px;
+    line-height: 28px;
+    overflow: hidden;
+}
+.box{
+    clear: both;
+    width: 200px;
+    margin: 0 auto;
+    background-color: #203;
+    overflow: hidden;
+}
+.box .b1,.box .b2{
+    display: inline-block;
+    color: #fff;
+    box-sizing: border-box;
+    font-size: 16px;
+    width: 80px;
+    height: 40px;
+    padding: 10px;
+}
+.box .b1 {
+    background-color: #f20;
+}
+.box .b2{
+    background-color: #986801;
+}
