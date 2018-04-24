@@ -10,3 +10,7 @@
 * [位移计算](位移运算)
 * [JS种call、apply、bind的区别](this指向的转变)
 * [免费版本Xshell的安装](免费版本xshell的安装)
+
+### nodejs篇
+
+* [nodejs中的exports和module.exports](node-exports)

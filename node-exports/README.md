@@ -1,0 +1,4 @@
+#### nodejs中的exports和module.exports的区别
+
+这里说到nodejs中的exports和module.exports的区别，应该主要是从ES6中的export串起来的。在使用了ES6的export后想起来node中也有类似的模块技术，这里就简要汇总一下。先说node中的exports和module.exports。
+
