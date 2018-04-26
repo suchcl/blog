@@ -10,6 +10,7 @@
 * [位移计算](位移运算)
 * [JS种call、apply、bind的区别](this指向的转变)
 * [免费版本Xshell的安装](免费版本xshell的安装)
+* [遍历DOM元素并设置相关属性](遍历DOM元素并设置相关属性)
 
 ### nodejs篇
 
