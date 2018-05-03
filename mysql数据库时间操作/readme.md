@@ -5,3 +5,7 @@
 ```sql
 select now();
 ```
+
+执行结果如下：
+
+![](images/img-db1.png)
