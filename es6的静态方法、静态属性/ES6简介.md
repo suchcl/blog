@@ -1,0 +1,1 @@
+ECMAScript6(简称ES6)是Javascript语言的下一代标准.
